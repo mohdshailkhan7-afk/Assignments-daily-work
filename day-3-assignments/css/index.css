@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.container-navbar{
+    background-color: rgba(182, 154, 13, 0.486);
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.container-navbar-about{
+    background-color: rgb(219, 37, 167);
+     display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+
+
+
+

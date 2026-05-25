@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial,sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items:  center;
+        padding: 20px;
+    }
+    .marksheet-container {
+        background-color: #ffffff;
+        border: 2px solid #333;
+        width: 800px ;
+        padding: 30px;
+        box-shadow: 0 4px 8px rgda(0,0,0,0.1);
+    }
+    .header-title { 
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        margin: battom 20px;
+    }
+    /* top info fields */
+    .info-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom : 10px;
+    }
+    .info-box.yellow {
+        background-color: #ffeb3d;
+        font-weight: bold;
+    }
+    /* stubent details table */
+    .details-table {
+        width:100%;
+        border-collapse:collapse;
+        margin-bottom: 20px;
+    }    
+    .details-table td {
+        border: 1px solid #000;
+        padding: 6px 10px ;
+        font-size: 14px ;
+    }  
+     .label-cell {
+        background-color: #f2f2f2;
+        font-weight: bold;
+        width: 15%;
+    }
+    .value-cell {
+        width: 35;
+    }
+    /* main marks table*/
+    .marks-table  {
+        width: 100;
+        border-collapse: collapse;
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .marks-table th, .marks-table td {
+        border: 1px solid #000;
+        padding: 6px;
+    }
+    .marks-table th  {
+        background-color: #f2f2f2;
+    }
+    /* ROW background colorsbased on image*/
+        .row-fail { 
+            background-color: #f8bbd0;
+            /* lightbpink*/
+    }
+        .row-pass {
+            background-color: #c8e6c9;
+            /* ligth green*/
+    }
+        /* taxt colords for failed maeks */
+        .text-fail {
+             color: #d81b60;
+             font-weight: bold;
+        }
+        /*summsry section */
+        .summary-contaier {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .summary-table {
+            width: 48%;
+            border-collapse: collapse;
+            font-size: 14px ;
+
+        }
+        .summary-table th {
+            border: 1px solid #000;
+            padding: 6px 10px ;
+        }
+        /* footer / status box */
+        .status-box {
+            display: flex;
+            display: flex ; 
+            border: 1px solid #000;
+
+        }
+        .status-label {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            padding: 10px;
+            width: 20%;
+            border-radius: 1px solid #000;
+        }
+        .status-value {
+            padding: 10px ;
+            width:80%;
+            color: #d81b60;
+            font-weight: bold;
+        }
+
+
+
+        *{
+    margin: 0;
+    padding: 0;
+
+}
+.container-navbar{
+    background-color: rgba(182, 154, 13, 0.486);
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.container-navbar-about{
+    background-color: rgb(219, 37, 167);
+     display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+        </style> 
+        </head>
+        </body>
+
+
+
+        <!-- Navbar -->
+
+
+        <div  class="container-navbar-about">
+
+        <!-- here is Navbar coding -->
+        <div>
+    <a href="#">LOGO</a>
+    </div>
+
+    <div>
+    <a href="./Home/home.html" >HOME</a>
+    </div>
+
+    <div>
+    <a href="./about/about.html" >ABOUT</a>
+    </div>
+
+    <div>
+    <a href="/day-3-assignments/about/about.html" >COHTACT</a>
+    </div>
+        
+    </div>
+
+
+<div class="marksheet-container">
+    <div class="header-title"></div>Marksheet 2023-2024
+     <div class="info-row">
+        <div class="info-box"><strong>grade:</strong>Xth</div>
+        <div class="info-box yellow" > roll no:</div>
+     </div>
+     <table class="deteils-table">
+        <tr>
+            <td class="label-cell">Name</td>
+            <td class="value-cell">Anthony Smith</td>
+            <td class="value-cell">Fathers Name</td>
+            <td class="value-cell">Christopher Smith</td>
+
+        </tr>
+        <tr>
+            <td class="label-cell">DOB</td>
+            <TD class="value-cell">6/8/2010</TD>
+            <td class="label-cell">Mothers Name</td>
+            <td class="value-cell">Email Smith</td>
+        </tr>
+     </table>
+     <table class="marks-table">
+        <thead>
+            <tr>
+                <th rowspan="2"style="wiidth:30%;">Subjecte</th>
+                <th colspan="2" >Total Marks </th>
+                <th colspan="2"> Passing Marks</th>
+                <th colspan="2"> Marks Obtained</th>
+                <th colspan="2"> Totle Obtained</th>
+                <th rowspan="2"> Grade</th>
+            </tr>
+            <tr>
+                <th style="width:9%";>Theory </th>
+                 <th style="width: 9%;">Internals</th>
+                 <th style="width: 9%;">Theory</th>
+                 <th style="width: 9%;">Internals</th>
+                 <th style="width: 9%;">Theory</th> 
+                 <th style="width: 9%;">Internals</th>
+            </tr>
+        </thead>
+        <TBody>
+            <tr class="row-fail">
+                <td style="text-align: left; font-weight: bold;background-color: #f2f2f2;">Taxation</td>
+                <td style="background-color: #bbdefd;">75</td>
+                <td style="background-color: #bbdefd;">25</td>
+                <td style="background-color: #ffccbc;">25</td>
+                <td style="background-color: #ffccbc;">10</td>
+                <td class="text-fail">24</td>
+                <td class="text-fail">34</td>
+                <td style="font-weight: bold;color: #d81b60;">F</td>
+            </tr>
+
+            <tr class="info-row-pass">
+                <td style="text-align: left; font-weight: bold;background-color: #f2f2f2;">International Business</td>
+                <td style="background-color: #bbdefd;">75</td>
+                <td style="background-color: #bbdefd;">25</td>
+                <td style="background-color: #ffccbc;">25</td>
+                <td style="background-color: #ffccbc;">10</td>
+                <td>34</td>
+                <td class="text-fail">9</td>
+                <td style="font-weight: bold;">41</td>
+                <td style="font-weight: bold;">E</td>
+
+            </tr>
+            <tr class="text-fail">
+                <td style="text-align: left; font-weight: bold;background-color:#f2f2f2"> Business Economics</td>
+                <td style="background-color: #bbdefd;">75</td>
+                <td style="background-color: #bbdefd;">25</td>
+                <td style="background-color: #ffccbc;">25</td>
+                <td style="background-color: #ffccbc;">10</td>
+                <td>28</td>
+                <td class="text-fail">9</td>
+                <td></td>
+                <td style="font-weight: bold;">37</td>
+                <td style="font-weight: bold;">E</td>
+
+            <tr class="text-fail">
+                <td style="text-align: left; font-weight: bold;background-color: #f2f2f2;">Business Communication</td>
+                <td style="background-color: #bbdefd;">100</td>
+                <td style="background-color: #bbdefd;"></td>
+                <td style="background-color: #ffccbc;">35</td>
+                <td style="background-color: #ffccbc;"></td>
+                <td>36</td>
+                <td></td>
+                <td style="font-weight: bold;">36</td>
+                <td style="font-weight: bold;">E</td>
+
+            </tr>
+            <tr class="row-fail">
+                <td style="text-align: left; font-weight: bold;background-color: #f2f2f2;">Environmental Studies</td>
+                <td style="background-color: #bbdefd;">100</td>
+                <td style="background-color: #bbdefd;"></td>
+                <td style="background-color: #ffccbc;">35</td>
+                <td style="background-color: #ffccbc;"></td>
+                <td class="text-fail">34</td>
+                <td></td>
+                <td class="text-fail">34</td>
+                <td style="font-weight: bold; color: #d81b60;"></td>
+            </tr>
+        </TBody>
+     </table>
+     <div class="summary-container">
+        <table class="summary-table">
+            <tr>
+                <td class="label-cell">total  marks</td>
+                <td>500</td>
+
+            </tr>
+            <tr>
+                <td class="label-cell">passing marks</td>
+                <td>175</td>
+            </tr>
+            <tr>
+                <td class="label-cell">total Obtained marks</td>
+                <td>182</td>
+            </tr>
+        </table>
+        <table class="summary-table">
+            <tr>
+                <td class="label-cell"> percentage </td>
+                <td>36</td>
+            </tr>
+            <tr>
+                <td class="label-cell"> academic grade</td>
+                <td style="font-weight: bold; color: #d81b60;">F</td>
+            </tr>
+            <tr>
+                <td class="label-cell"> rank</td>
+                <td>9</td>
+            </tr>
+
+        </table>
+        <div class="status-box">
+            <div class="status-label">you are</div>
+            <div class="status-value">Fail in:Tax-Theory | TB-Internals | TB-Internals | EVS-Theory</div>
+
+        </div>
+     </div>
+</div>
+
+</body>
+</html>
